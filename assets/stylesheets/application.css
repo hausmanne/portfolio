@@ -1,2 +1,188 @@
 @import url(base/font.css);
+@import url(base/global.css);
 @import url(base/normalize.css);
+@import url(layout/sections.css);
+
+/*
+* Navbar
+*/
+#navbar {
+    display: flex;
+    width: 100%;
+    height: 53px;
+    background-color: #373737;
+}
+
+.nav {
+    display: flex;
+    max-width: 65%;
+    width: 100%;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.nav a {
+    color: white;
+    font-weight: 100;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    transition: color 0.12s ease-out 0.12s;
+}
+
+.nav a:hover {
+    color: #06D0FF;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/*
+  * Home page
+  */
+.f1 {
+    color: white;
+}
+
+.button a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.button {
+    padding: 5px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.15s ease-out 0.15s, background-color 0.15s ease-out 0.15s;
+}
+
+.button:hover {
+    background-color: #06D0FF;
+    border: 3px solid #06D0FF;
+}
+
+/*
+  * About
+  */
+.offer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quality {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quality p {
+    text-align: center;
+}
+
+div.quality.q1 {
+    width: 248px;
+}
+
+div.quality.q2 {
+    width: 279px;
+}
+
+div.quality.q3 {
+    width: 290px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.presentationimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.presentationimg img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.presentationwrite {
+    max-width: 400px;
+}
+.button2 a {
+    color: black;
+    font-size: 1em;
+}
+
+.button2 {
+    padding: 5px;
+    border: 2px solid #06D0FF;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.15s ease-out 0.15s, background-color 0.15s ease-out 0.15s;
+}
+
+.button2:hover {
+    background-color: #06D0FF;
+    border: 2px solid #06D0FF;
+}
+
+/*
+* Projects
+*/
+.projects {
+    display: flex;
+    flex-direction: row;
+}
+.project {
+    width: 400px;
+    height: 400px;
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.project.waykup {
+    background-image: url("../images/waykup.PNG");
+}
+.button3 a {
+    color: black;
+    font-size: 1.5em;
+}
+
+.button3 {
+    padding: 5px;
+    border: 2px solid #06D0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s ease-out 0.15s;
+}
+
+.button3:hover {
+    .button3 {
+        background-color: #06D0FF;
+    }
+    .falsebackground {
+        width: 50px;
+        height: 15px;
+        background-color: white;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,98 @@
+/* 
+* Gobal
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+body, html {
+   font-family: 'karla';
+   height: 100%;
+}
+  
+h1,h2,h3,h4,h5,h6 {
+    line-height: 2em;
+    word-break: break-word;
+    padding: 1em 0em;
+    text-align: center;
+}
+  
+p {
+    padding-bottom: 1em;
+    font-weight: 100;
+}
+  
+img, iframe {
+  max-width: 100%;
+}
+
+a {
+    color:#06D0FF;
+    text-decoration:none;
+}
+
+body {
+    -webkit-font-smoothing:antialiased;
+}
+/*
+ * Sections
+ */
+ section.fixed {
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+section.scrolling {
+	line-height: 1.6;
+	padding: 4em 0;
+	position: relative;
+	z-index: 2;
+}
+.container {
+    margin: 0 auto;
+    max-width: 65%;
+    width: 90%;
+}
+section .container::after {
+	clear: both;
+	content: '';
+	display: table;
+}
+/*
+ * Responsiveness
+ */
+ @media (max-width: 768px) {
+    * {
+      line-height: inherit !important;
+    }
+    .activities {
+      flex-direction: column;
+      align-items: center;
+    }
+    .vision, .activity {
+      margin: 15px;
+	}
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.nav {
+		height: 100px;
+		flex-wrap: wrap;
+		justify-content: center;
+	  }
+	  nav {
+		height: 100px;
+	  }
+}

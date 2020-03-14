@@ -7,17 +7,113 @@
     
     <link rel="stylesheet" href="assets/stylesheets/application.css"/>
 
+    <!-- favicon stuff -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon3.png">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159516284-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159516284-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-159516284-1');
+      gtag('config', 'UA-159516284-2');
     </script>
   </head>
 
   <body>
+
+    <section id="home" class="fixed f1">
+      <h1>Hello, I'm Elie Hausmann</br>and I'm a full-stack developer.</h1>
+      <div class="button">
+        <a href="#about">View my work -></a>
+      </div>
+    </section>
+
+    <nav id="navbar">
+      <div class="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <section id="about" class="scrolling s1">
+      <div class="container">
+        <h2>About</h2>
+        <div class="offer">
+          <div class="quality q1">
+            <img src="assets/images/fast.png">
+            <h3>Fast</h3>
+            <p>Fast load times and lag free interaction are my priority.</p>
+          </div>
+          <div class="quality q2">
+            <img src="assets/images/simple.png">
+            <h3>Simple</h3>
+            <p>Clean and simple user interface. Webiste code easy to maintain.</p>
+          </div>
+          <div class="quality q3">
+            <img src="assets/images/responsive.png">
+            <h3>Responsive</h3>
+            <p>With the responsive design, the site will good looking on any display.</p>
+          </div>
+        </div>
+        <div class="presentation">
+          <div class="presentationimg">
+            <img src="assets/images/comingsoon.jpg">
+            <h3>Who am I ?</h3>
+          </div>
+          <div class="presentationwrite">
+            <p>
+              I am a full-stack dev based in Fribourg, Switzerland. 
+              I have passion for coding websites and web apps. 
+              To realise my projects, I use HTML, CSS, Rails (Ruby) and 
+              React (Javascript).
+            </p>
+            <div class="button2">
+              <a href="resume.pdf">Get my resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="scrolling s2">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project waykup">
+            <div class="button3">
+              <a href="http://waykup.ch/">Go on website -></a>
+              <div class="falsebakground"></div>
+            </div>
+          </div>
+          <div class="project rooter">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scrolling s3">
+
+    </section>
+
+    <!-- Sticky nav JS script -->
+    <script>
+      window.onscroll = function() {myFunction()};
+          
+      var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+          
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
   </body>
 </html>
