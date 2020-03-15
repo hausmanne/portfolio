@@ -24,7 +24,7 @@
   <body>
 
     <section id="home" class="fixed f1">
-      <h1>Hello, I'm Elie Hausmann</br>and I'm a full-stack developer.</h1>
+      <h1>Hello, I'm Elie Hausmann</br>and I'm a full-stack developer learner.</h1>
       <div class="button">
         <a href="#about">View my work -></a>
       </div>
@@ -68,7 +68,8 @@
             <p>
               I am a full-stack dev based in Fribourg, Switzerland. 
               I have passion for coding websites and web apps. 
-              To realise my projects, I use HTML, CSS, Rails (Ruby) and 
+              To realise my projects, I use HTML and CSS. I want 
+              to increase my developer skils so I am learning Rails (Ruby) and 
               React (Javascript).
             </p>
             <div class="button2">
@@ -83,20 +84,38 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="projects">
-          <div class="project waykup">
+          <div class="project waykup">  
             <div class="button3">
-              <a href="http://waykup.ch/">Go on website -></a>
-              <div class="falsebakground"></div>
+              <a href="http://waykup.ch/" target="_blank">Go on website -></a>
             </div>
           </div>
           <div class="project rooter">
+            <div class="button3">
+              <a href="http://therooter.ch/" target="_blank">Go on website -></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="scrolling s3">
-
+      <div class="container">
+        <h2>Contact</h2>
+        <center>
+          <p>Have a question or want to work together ? Let me know just below !</p>
+        </center>
+        <div class="formulaire">
+          <form method="post" action="send.rb">
+            <input type="text" name="lastname" id="lastname" required="required" placeholder="Lastname"/>
+            <input type="text" name="firstname" id="firstname" required="required" placeholder="Firstname"/>
+            <input type="email" name="email" id="email" required="required" placeholder="Email"/>
+            <textarea type="text" name="message" rows="5" cols="35" placeholder="Message" required="required"></textarea>
+            <div id="submit" type="submit" class="button2">
+              <a href="">SUBMIT</a>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Sticky nav JS script -->

@@ -11,6 +11,7 @@
     width: 100%;
     height: 53px;
     background-color: #373737;
+    z-index: 3;
 }
 
 .nav {
@@ -121,6 +122,7 @@ div.quality.q3 {
 .presentationwrite {
     max-width: 400px;
 }
+
 .button2 a {
     color: black;
     font-size: 1em;
@@ -147,23 +149,33 @@ div.quality.q3 {
 .projects {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+
 .project {
     width: 400px;
     height: 400px;
-	background-position: center center;
-	background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
+
 div.project.waykup {
     background-image: url("../images/waykup.PNG");
 }
+
+div.project.rooter {
+    background-image: url("../images/rooter.jpg");
+}
+
 .button3 a {
     color: black;
     font-size: 1.5em;
+    transition: color 0.15s ease-out 0.15s;
 }
 
 .button3 {
@@ -172,17 +184,55 @@ div.project.waykup {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.15s ease-out 0.15s;
+    background-color: #06D0FF;
+    transition: border 0.15s ease-out 0.15s;
 }
 
-.button3:hover {
-    .button3 {
-        background-color: #06D0FF;
-    }
-    .falsebackground {
-        width: 50px;
-        height: 15px;
-        background-color: white;
-        opacity: 0.5;
-    }
+.button3:hover a {
+    color: white;
+}
+
+/*
+* Contact
+*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    color: black;
+    border: 2px solid #06D0FF;
+    height: 30px;
+    width: 350px;
+    padding: 3px;
+    margin: 3px;
+    outline: none;
+}
+
+textarea {
+    color: black;
+    border: 2px solid #06D0FF;
+    width: 350px;
+    padding: 3px;
+    margin: 3px;
+    outline: none;
+}
+
+#submit {
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 90px;
+    border: 2px solid #06D0FF;
+    margin: 3px;
+    transition: background-color 0.15s ease-out 0.15;
+}
+#submit:hover {
+    background-color: #06D0FF;
 }
