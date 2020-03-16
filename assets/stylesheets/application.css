@@ -68,6 +68,7 @@
     background-color: #06D0FF;
     border: 3px solid #06D0FF;
 }
+
 /*
   * About
   */
@@ -75,7 +76,7 @@
     padding-top: 6em;
 }
 
-  .offer {
+.offer {
     display: flex;
     justify-content: space-around;
 }
@@ -104,7 +105,6 @@ div.quality.q3 {
 
 .presentation {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 8em;
@@ -151,8 +151,7 @@ div.quality.q3 {
 */
 .projects {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .project {
@@ -178,6 +177,7 @@ div.project.rooter {
 div.project.chater {
     background-image: url("../images/thechater.jpg");
 }
+
 /*
 * Contact
 */
@@ -223,6 +223,7 @@ textarea {
 #submit:hover {
     background-color: #06D0FF;
 }
+
 /*
 * Footer
 */
@@ -230,9 +231,10 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .footLink img {
+}
+
+.footLink img {
     width: 60px;
     height: 60px;
     margin: 15px;
-  }
+}

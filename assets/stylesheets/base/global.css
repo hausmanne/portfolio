@@ -2,45 +2,53 @@
 * Gobal
 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  
-body, html {
-   font-family: 'karla';
-   height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
-  
-h1,h2,h3,h4,h5,h6 {
-    line-height: 2em;
-    word-break: break-word;
-    padding: 1em 0em;
-    text-align: center;
+
+body,
+html {
+	font-family: 'karla';
+	height: 100%;
 }
-  
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 2em;
+	word-break: break-word;
+	padding: 1em 0em;
+	text-align: center;
+}
+
 p {
-    padding-bottom: 1em;
-    font-weight: 100;
+	padding-bottom: 1em;
+	font-weight: 100;
 }
-  
-img, iframe {
-  max-width: 100%;
+
+img,
+iframe {
+	max-width: 100%;
 }
 
 a {
-    color:#06D0FF;
-    text-decoration:none;
+	color: #06D0FF;
+	text-decoration: none;
 }
 
 body {
-    -webkit-font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
 }
+
 /*
  * Sections
  */
- section.fixed {
+section.fixed {
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -54,46 +62,44 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+
 section.scrolling {
 	line-height: 1.6;
 	padding: 4em 0;
 	position: relative;
 	z-index: 2;
 }
+
 .container {
-    margin: 0 auto;
-    max-width: 65%;
+	margin: 0 auto;
+	max-width: 65%;
 	width: 90%;
 }
+
 section .container::after {
 	clear: both;
 	content: '';
 	display: table;
 }
+
 /*
  * Responsiveness
  */
- @media (max-width: 768px) {
-    * {
-      line-height: inherit !important;
-    }
-    .activities {
-      flex-direction: column;
-      align-items: center;
-    }
-    .vision, .activity {
-      margin: 15px;
-	}
-	.footer {
-		flex-direction: column;
-		justify-content: center;
-	}
+@media only screen and (max-width: 768px) {
 	.nav {
-		height: 100px;
-		flex-wrap: wrap;
 		justify-content: center;
-	  }
-	  nav {
-		height: 100px;
-	  }
+	}
+
+	.offer {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.presentation {
+		flex-direction: column;
+	}
+
+	.projects {
+		flex-direction: column;
+	}
 }
