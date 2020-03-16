@@ -68,11 +68,14 @@
     background-color: #06D0FF;
     border: 3px solid #06D0FF;
 }
-
 /*
   * About
   */
-.offer {
+#about {
+    padding-top: 6em;
+}
+
+  .offer {
     display: flex;
     justify-content: space-around;
 }
@@ -172,26 +175,9 @@ div.project.rooter {
     background-image: url("../images/rooter.jpg");
 }
 
-.button3 a {
-    color: black;
-    font-size: 1.5em;
-    transition: color 0.15s ease-out 0.15s;
+div.project.chater {
+    background-image: url("../images/thechater.jpg");
 }
-
-.button3 {
-    padding: 5px;
-    border: 2px solid #06D0FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #06D0FF;
-    transition: border 0.15s ease-out 0.15s;
-}
-
-.button3:hover a {
-    color: white;
-}
-
 /*
 * Contact
 */
@@ -233,6 +219,20 @@ textarea {
     margin: 3px;
     transition: background-color 0.15s ease-out 0.15;
 }
+
 #submit:hover {
     background-color: #06D0FF;
 }
+/*
+* Footer
+*/
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footLink img {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+  }

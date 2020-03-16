@@ -61,15 +61,15 @@
         </div>
         <div class="presentation">
           <div class="presentationimg">
-            <img src="assets/images/comingsoon.jpg">
+            <img src="assets/images/icon/meIcon.png">
             <h3>Who am I ?</h3>
           </div>
           <div class="presentationwrite">
             <p>
-              I am a full-stack dev based in Fribourg, Switzerland. 
+              I am a full-stack dev learner based in Fribourg, Switzerland. 
               I have passion for coding websites and web apps. 
               To realise my projects, I use HTML and CSS. I want 
-              to increase my developer skils so I am learning Rails (Ruby) and 
+              to increase my developer skills so I am learning Rails (Ruby) and 
               React (Javascript).
             </p>
             <div class="button2">
@@ -84,37 +84,41 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="projects">
-          <div class="project waykup">  
-            <div class="button3">
-              <a href="http://waykup.ch/" target="_blank">Go on website -></a>
-            </div>
-          </div>
-          <div class="project rooter">
-            <div class="button3">
-              <a href="http://therooter.ch/" target="_blank">Go on website -></a>
-            </div>
-          </div>
+            <a href="http://waykup.ch/" target="_blank"><div class="project waykup"></div></a>
+            <a href="http://therooter.ch/" target="_blank"><div class="project rooter"></div></a>
+            <a href="http://thechater.ch/" target="_blank"><div class="project chater"></div></a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="scrolling s3">
+    <section id="contact" class="scrolling s1">
       <div class="container">
         <h2>Contact</h2>
         <center>
           <p>Have a question or want to work together ? Let me know just below !</p>
         </center>
         <div class="formulaire">
-          <form method="post" action="send.rb">
+          <form method="post" action="https://formspree.io/mjvowrdq">
             <input type="text" name="lastname" id="lastname" required="required" placeholder="Lastname"/>
             <input type="text" name="firstname" id="firstname" required="required" placeholder="Firstname"/>
             <input type="email" name="email" id="email" required="required" placeholder="Email"/>
             <textarea type="text" name="message" rows="5" cols="35" placeholder="Message" required="required"></textarea>
-            <div id="submit" type="submit" class="button2">
-              <a href="">SUBMIT</a>
-            </div>
+            <input id="submit" type="submit" class="button2" value="SUBMIT"/>
           </form>
         </div>
+      </div>
+    </section>
+
+    <section id="footer" class="scrolling s3">
+      <div class="container">
+        <div class="contactInfo">
+          <a class="footLink" href="mailto:elie.hausmann@gmail.com"><img src="assets/images/icon/mailIcon.png"/></a>
+          <a class="footLink" href="https://github.com/hausmanne" target="_blank"><img src="assets/images/icon/githubIcon.png"/></a>
+          <a class="footLink" href="https://www.instagram.com/waykup.gdj/?hl=fr" target="_blank"><img src="assets/images/icon/instagramIcon.png"/></a>
+        </div>
+        <center>
+          <p>ELIE HAUSMANN ©2020</p>
+        </center>
       </div>
     </section>
 
