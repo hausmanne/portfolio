@@ -151,12 +151,12 @@ div.quality.q3 {
 */
 .projects {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .project {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
