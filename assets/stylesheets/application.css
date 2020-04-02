@@ -14,7 +14,7 @@
     z-index: 3;
 }
 
-.nav {
+.navbar__links {
     display: flex;
     max-width: 65%;
     width: 100%;
@@ -22,17 +22,17 @@
     margin: 0 auto;
 }
 
-.nav a {
+.navbar__links a {
     color: white;
     font-weight: 100;
     font-size: 1em;
     display: flex;
     align-items: center;
     margin: 0px 20px;
-    transition: color 0.12s ease-out 0.12s;
+    transition: color 0.14s ease-out 0.14s;
 }
 
-.nav a:hover {
+.navbar__links a:hover {
     color: #06D0FF;
 }
 
@@ -46,27 +46,8 @@
 /*
   * Home page
   */
-.f1 {
+.f1--color {
     color: white;
-}
-
-.button a {
-    color: white;
-    font-size: 1.5em;
-}
-
-.button {
-    padding: 5px;
-    border: 3px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border 0.15s ease-out 0.15s, background-color 0.15s ease-out 0.15s;
-}
-
-.button:hover {
-    background-color: #06D0FF;
-    border: 3px solid #06D0FF;
 }
 
 /*
@@ -79,27 +60,28 @@
 .offer {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
 }
 
-.quality {
+.offer__quality {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.quality p {
+.offer__quality p {
     text-align: center;
 }
 
-div.quality.q1 {
+.offer__quality--size {
     width: 248px;
 }
 
-div.quality.q2 {
+.offer__quality--size2 {
     width: 279px;
 }
 
-div.quality.q3 {
+.offer__quality--size3 {
     width: 290px;
 }
 
@@ -110,40 +92,20 @@ div.quality.q3 {
     margin-top: 8em;
 }
 
-.presentationimg {
+.presentation__img {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.presentationimg img {
+.presentation__img img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-.presentationwrite {
+.presentation__write {
     max-width: 400px;
-}
-
-.button2 a {
-    color: black;
-    font-size: 1em;
-}
-
-.button2 {
-    padding: 5px;
-    border: 2px solid #06D0FF;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border 0.15s ease-out 0.15s, background-color 0.15s ease-out 0.15s;
-}
-
-.button2:hover {
-    background-color: #06D0FF;
-    border: 2px solid #06D0FF;
 }
 
 /*
@@ -154,7 +116,7 @@ div.quality.q3 {
     justify-content: center;
 }
 
-.project {
+.projects__project {
     width: 350px;
     height: 350px;
     background-position: center center;
@@ -166,22 +128,22 @@ div.quality.q3 {
     margin: 5px;
 }
 
-div.project.waykup {
+.project--waykup {
     background-image: url("../images/waykup.PNG");
 }
 
-div.project.rooter {
+.project--rooter {
     background-image: url("../images/rooter.jpg");
 }
 
-div.project.chater {
+.project--chater {
     background-image: url("../images/thechater.jpg");
 }
 
 /*
 * Contact
 */
-form {
+.formulaire form {
     display: flex;
     flex-direction: column;
 }
@@ -191,7 +153,7 @@ form {
     justify-content: center;
 }
 
-input {
+.formulaire input {
     color: black;
     border: 2px solid #06D0FF;
     height: 30px;
@@ -201,7 +163,7 @@ input {
     outline: none;
 }
 
-textarea {
+.formulaire textarea {
     color: black;
     border: 2px solid #06D0FF;
     width: 350px;
@@ -210,31 +172,62 @@ textarea {
     outline: none;
 }
 
-#submit {
-    color: black;
-    background-color: white;
-    height: 40px;
-    width: 90px;
-    border: 2px solid #06D0FF;
-    margin: 3px;
-    transition: background-color 0.15s ease-out 0.15;
-}
-
-#submit:hover {
-    background-color: #06D0FF;
-}
-
 /*
 * Footer
 */
-.contactInfo {
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footLink img {
+.contact__link img {
     width: 60px;
     height: 60px;
     margin: 15px;
+}
+
+/*
+* Button
+*/
+
+.button {
+    padding: 5px;
+    border: 2px solid #06D0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.16s ease-out 0.16s, background-color 0.16s ease-out 0.16s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.button.button--size {
+    background-color: white;
+    height: 40px;
+    width: 90px;
+}
+
+.button:hover {
+    background-color: #06D0FF;
+}
+
+.button.button--border {
+    border: 3px solid white;
+    width: 210px;
+}
+
+.button.button--border:hover {
+    border-color: #06D0FF;
+}
+
+.button__link {
+    color: black;
+    font-size: 1em;
+}
+
+.button__link--color {
+    color: white;
+    font-size: 1.5em;
+    padding: 3px;
 }
