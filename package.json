@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-e": "sass --watch ./sass/main.scss:./css/newAplication.css --style expanded",
-    "sass-c": "sass --watch ./sass/main.scss:./css/newAplication.css --style compressed",
+    "sass-e": "sass --watch ./assets/sass/main.scss:./css/newAplication.css --style expanded",
+    "sass-c": "sass --watch ./assets/sass/main.scss:./css/newAplication.css --style compressed",
     "prefix": "postcss ./css/newAplication.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
