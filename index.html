@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <nav id="navbar">
+    <nav class="navbar">
       <div class="navbar__links">
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
@@ -84,9 +84,9 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="projects">
-            <a href="http://waykup.ch/" target="_blank"><div class="projects__project project--waykup"></div></a>
-            <!--<a href="http://therooter.ch/" target="_blank"><div class="projects__project project--rooter"></div></a>
-            <a href="http://thechater.ch/" target="_blank"><div class="projects__project project--chater"></div></a>-->
+            <a href="http://waykup.ch/" target="_blank"><div class="projects__project --waykup"></div></a>
+            <!--<a href="http://therooter.ch/" target="_blank"><div class="projects__project --rooter"></div></a>
+            <a href="http://thechater.ch/" target="_blank"><div class="projects__project --chater"></div></a>-->
         </div>
       </div>
     </section>
@@ -126,7 +126,7 @@
     <script>
       window.onscroll = function() {myFunction()};
           
-      var navbar = document.getElementById("navbar");
+      var navbar = document.getElementsByClassName("navbar");
         var sticky = navbar.offsetTop;
           
       function myFunction() {

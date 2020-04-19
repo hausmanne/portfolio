@@ -9,10 +9,10 @@
             background-color: white;
         }
         &.s2 {
-            background-color: #F5F5F5;
+            background-color: $section-background;
         }
         &.s3 {
-            background-color: #373737;
+            background-color: $primary-color;
         }
     }
 }

@@ -1,0 +1,77 @@
+.f1--color {
+    color: white;
+}
+/*
+  * About
+  */
+  #about {
+    padding-top: 6em;
+}
+.offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    &__quality {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p {
+            text-align: center;
+        }
+        &--size {
+            width: 248px;
+        }
+        &--size2 {
+            width: 279px;
+        }
+        &--size3 {
+            width: 290px;
+        }
+    }
+}
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8em;
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+    &__write {
+        max-width: 400px;
+    }
+}
+/*
+* Projects
+*/
+.projects {
+    display: flex;
+    justify-content: center;
+    &__project {
+        width: 350px;
+        height: 350px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        --waykup {
+            background-image: url("../images/waykup.PNG");
+        }
+        --rooter {
+            background-image: url("../images/rooter.jpg");
+        }
+        --chater {
+            background-image: url("../images/thechater.jpg");
+        }
+    }
+}

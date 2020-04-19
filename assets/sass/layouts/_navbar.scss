@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 53px;
+    background-color: $primary-color;
+    z-index: 3;
+    &__links {
+        display: flex;
+        max-width: 65%;
+        width: 100%;
+        flex-direction: row;
+        margin: 0 auto;
+        a {
+            color: white;
+            font-weight: 100;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            margin: 0px 20px;
+            transition: color 0.14s ease-out 0.14s;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
