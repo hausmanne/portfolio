@@ -1,0 +1,25 @@
+.formulaire {
+    display: flex;
+    justify-content: center;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        color: black;
+        border: 2px solid $secondary-color;
+        height: 30px;
+        width: 350px;
+        padding: 3px;
+        margin: 3px;
+        outline: none;
+    }
+    textarea {
+        color: black;
+        border: 2px solid $secondary-color;
+        width: 350px;
+        padding: 3px;
+        margin: 3px;
+        outline: none;
+    }
+}
