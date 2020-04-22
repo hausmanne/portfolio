@@ -5,13 +5,13 @@
         display: flex;
         flex-direction: column;
     }
-    input {
+    .field {
         color: black;
         border: 2px solid $secondary-color;
         height: 30px;
         width: 350px;
         padding: 3px;
-        margin: 3px;
+        margin-bottom: 5px;
         outline: none;
     }
     textarea {
@@ -19,7 +19,7 @@
         border: 2px solid $secondary-color;
         width: 350px;
         padding: 3px;
-        margin: 3px;
+        margin-bottom: 5px;
         outline: none;
     }
 }

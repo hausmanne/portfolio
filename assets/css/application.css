@@ -390,13 +390,13 @@ section .container::after {
   display: flex;
   flex-direction: column;
 }
-.formulaire input {
+.formulaire .field {
   color: black;
   border: 2px solid #06D0FF;
   height: 30px;
   width: 350px;
   padding: 3px;
-  margin: 3px;
+  margin-bottom: 5px;
   outline: none;
 }
 .formulaire textarea {
@@ -404,7 +404,7 @@ section .container::after {
   border: 2px solid #06D0FF;
   width: 350px;
   padding: 3px;
-  margin: 3px;
+  margin-bottom: 5px;
   outline: none;
 }
 
@@ -538,4 +538,4 @@ section .container::after {
   margin: 15px;
 }
 
-/*# sourceMappingURL=aplication.css.map */
+/*# sourceMappingURL=application.css.map */
