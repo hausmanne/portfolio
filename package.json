@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass-e": "sass --watch ./assets/sass/main.scss:./assets/css/application.css --style expanded",
@@ -18,5 +17,6 @@
     "url": "https://github.com/hausmanne/portfolio/issues"
   },
   "homepage": "https://github.com/hausmanne/portfolio#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "description": ""
 }
