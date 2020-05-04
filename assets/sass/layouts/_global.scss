@@ -86,7 +86,7 @@ section{
  * Responsiveness
  */
 @media only screen and (max-width: 768px) {
-	.nav {
+	.navbar {
 		justify-content: center;
 	}
 
@@ -96,10 +96,6 @@ section{
 	}
 
 	.presentation {
-		flex-direction: column;
-	}
-
-	.projects {
 		flex-direction: column;
 	}
 }

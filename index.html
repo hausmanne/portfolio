@@ -6,19 +6,10 @@
     <meta name="author" content="Elie Hausmann">
     
     <link rel="stylesheet" href="assets/css/application.css"/>
+    <script type="text/javascript" src="assets/javascript/application.js"></script>
 
     <!-- favicon stuff -->
     <link rel="icon" type="image/png" href="assets/images/logo/favicon3.png">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159516284-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-159516284-2');
-    </script>
   </head>
 
   <body>
@@ -66,9 +57,9 @@
           </div>
           <div class="presentation__write">
             <p>
-              I am a full-stack dev learner based in Fribourg, Switzerland. 
+              I am a full-stack dev learner in Switzerland. 
               I have passion for coding websites and web apps. 
-              To realise my projects, I use HTML and CSS. I want 
+              To realise my projects, I use HTML, CSS and Sass. I want 
               to increase my developer skills so I am learning Rails (Ruby) and 
               React (Javascript).
             </p>
@@ -122,21 +113,10 @@
       </div>
     </section>
 
-    <!-- Sticky nav JS script -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159516284-2"></script>
     <script>
-      window.onscroll = function() {myFunction()};
-          
-      var navbar = document.getElementsByClassName("navbar");
-        var sticky = navbar.offsetTop;
-          
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-      }
+      googleAnalytics();
     </script>
-
   </body>
 </html>

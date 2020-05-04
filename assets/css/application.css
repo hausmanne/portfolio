@@ -365,7 +365,7 @@ section .container::after {
  * Responsiveness
  */
 @media only screen and (max-width: 768px) {
-  .nav {
+  .navbar {
     justify-content: center;
   }
 
@@ -375,10 +375,6 @@ section .container::after {
   }
 
   .presentation {
-    flex-direction: column;
-  }
-
-  .projects {
     flex-direction: column;
   }
 }
@@ -429,17 +425,10 @@ section .container::after {
   display: flex;
   align-items: center;
   margin: 0px 20px;
-  transition: color 0.14s ease-out 0.14s;
+  transition: color 0.08s ease-out 0.08s;
 }
 .navbar__links a:hover {
   color: #06D0FF;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
 }
 
 .f1--color {
@@ -449,10 +438,6 @@ section .container::after {
 /*
   * About
   */
-#about {
-  padding-top: 6em;
-}
-
 .offer {
   display: flex;
   justify-content: space-around;
