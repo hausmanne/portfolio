@@ -48,6 +48,9 @@ body {
 /*
  * Sections
  */
+#responsive {
+	display: flex;
+}
 section{
     &.fixed {
         background-attachment: fixed;
@@ -81,21 +84,20 @@ section{
 	max-width: 65%;
 	width: 90%;
 }
-
 /*
  * Responsiveness
  */
-@media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
 	.navbar {
 		justify-content: center;
 	}
-
-	.offer {
+	.offer{
 		flex-direction: column;
-		margin: 0 auto;
 	}
-
 	.presentation {
 		flex-direction: column;
+	}
+	#responsive {
+		justify-content: center;
 	}
 }

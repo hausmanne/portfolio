@@ -329,6 +329,10 @@ body {
 /*
  * Sections
  */
+#responsive {
+  display: flex;
+}
+
 section.fixed {
   background-attachment: fixed;
   background-position: center center;
@@ -371,11 +375,14 @@ section .container::after {
 
   .offer {
     flex-direction: column;
-    margin: 0 auto;
   }
 
   .presentation {
     flex-direction: column;
+  }
+
+  #responsive {
+    justify-content: center;
   }
 }
 .formulaire {
@@ -429,6 +436,11 @@ section .container::after {
 }
 .navbar__links a:hover {
   color: #06D0FF;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
 
 .f1--color {
