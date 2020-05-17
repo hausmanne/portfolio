@@ -19,20 +19,3 @@ function stickyNav() {
     }
     });
 }
-
-function respNavbar() {
-    var x = document.getElementById("navbar__links");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-}
-
-function noBurgerMenu() {
-    document.getElementsByClassName("burgerMenu").style.display = "none";
-}
-
-function xburgerMenu(x) {
-    x.classList.toggle("change");
-  }

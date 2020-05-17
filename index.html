@@ -4,9 +4,11 @@
     <title>Elie Hausmann</title>
     <meta name="description" content="Elie Hausmann Portfolio">
     <meta name="author" content="Elie Hausmann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/application.css"/>
     <script type="text/javascript" src="assets/javascript/application.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- favicon stuff -->
@@ -23,17 +25,16 @@
     </section>
 
     <nav class="navbar">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
       <div class="navbar__links">
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </div>
-      <!--<div class="burgerMenu" onclick="xburgerMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>-->
     </nav>
 
     <section id="about" class="scrolling s1">
@@ -98,7 +99,7 @@
             <input type="text" class="field" name="firstname" id="firstname" required="required" placeholder="Firstname"/>
             <input type="email" class="field" name="email" id="email" required="required" placeholder="Email"/>
             <textarea type="text" name="message" rows="5" cols="35" placeholder="Message" required="required"></textarea>
-            <input id="submit" type="submit" class="button button--size" value="SUBMIT"/>
+            <input id="submit" type="submit" class="button button--background" value="SUBMIT"/>
           </form>
         </div>
       </div>
@@ -122,7 +123,6 @@
     <script>
       googleAnalytics();
       stickyNav();
-      noBurgerMenu();
     </script>
   </body>
 </html>
