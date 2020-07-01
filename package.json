@@ -18,5 +18,8 @@
   },
   "homepage": "https://github.com/hausmanne/portfolio#readme",
   "browserslist": "last 4 versions",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "sass": "^1.26.8"
+  }
 }
